@@ -3,6 +3,7 @@ class WorkoutsController < ApplicationController
   end
 
   def show
+    @workouts = Workout.all
   end
 
   def new

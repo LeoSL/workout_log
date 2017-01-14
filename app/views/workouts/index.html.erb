@@ -1,1 +1,13 @@
-<h1>This is Workouts#Index placeholder</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>This is Workout Log</h1>
+    </div>
+    <div class="col-md-2">
+      <%= button_to "Login / Sign up", new_user_session_path, class: 'btn btn-default btn-lg login-button' %>
+    </div>
+    <div class="col-md-2">
+      <%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-default btn-lg login-button' %>
+    </div>
+  </div>
+</div>
