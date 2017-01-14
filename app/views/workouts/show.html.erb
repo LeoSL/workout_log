@@ -1,0 +1,6 @@
+<h2> Workouts </h2>
+<% @workouts.each do |workout| %>
+  <% workout.attributes.keys.each do |key| %>
+    <p> <%= "Workout #{key}: #{workout.attributes[key]}" %> </p>
+  <% end %>
+<% end %>
